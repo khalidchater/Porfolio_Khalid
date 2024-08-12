@@ -5,13 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "homepage":"https://khalidchater.github.io/My-PortFolio",
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-scroll-area": "^1.1.0",
     "@radix-ui/react-select": "^2.1.1",
