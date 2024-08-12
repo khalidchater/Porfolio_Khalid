@@ -19,7 +19,7 @@ function MobileRes() {
         <div className='mt-20  text-center text-xl'>
           <Link href='/'>
             {" "}
-            <h3 className='text-[#FF4C4C] font-semibold '>Logo.</h3>
+            <h3 className='text-[#FF4C4C] font-semibold '>khalid.</h3>
           </Link>
         </div>
         <nav className='flex flex-col justify-center items-center gap-6  '>
