@@ -3,10 +3,10 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { BsGithub } from "react-icons/bs";
-import Ecommerc from "../../../public/E-commerc website.png"
+import Ecommerc from "../../../public/E-commerc website.png";
 import FullStack from "../../../public/full_Stack.png";
 import WATHER from "../../../public/WEATHERAPP.png";
-import Portfolio from "../../../public/Porfolio.png"
+import Portfolio from "../../../public/Porfolio.png";
 
 import {
   Tooltip,
@@ -17,7 +17,7 @@ import {
 
 import { BsArrowDownRight } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Slide from "@/components/WorkSlide"
+import Slide from "@/components/WorkSlide";
 
 // Import Swiper styles
 import "swiper/css";
@@ -91,7 +91,7 @@ function Page() {
     console.log(current);
     setproject(projects[current]);
   };
-  
+
   return (
     <div className='min-h-[80vh] flex   justify-center py-12 xl:px-0'>
       <div className=' container mx-auto'>
