@@ -2,32 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box  
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root {
+  --font-JetBrains: 'JetBrains Mono', monospace;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: var(--font-JetBrains), sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.dark body {
+  font-family: var(--font-JetBrains), sans-serif;
+  /* تأكد من أن الوضع الليلي لا يغير الـ font-family */
+}
+
+@layer base {
+  body {
+    @apply font-primary bg-primary text-white leading-loose  ;
   }
+  h1{
+    @apply text-[40px] xl:text-[45px] leading-[1-1];
+  }
+  h2{
+    @apply text-[30px] xl:text-[35px] leading-[1-1]
+  }
+  h3{
+    @apply text-[20px] xl:text-[25px] leading-[1-1]
+  }
+  h4{
+    @apply text-[15px] xl:text-[12px] leading-[1-1]
+  }
+}
+.text-outline{ 
+  -webkit-text-stroke:1px #ffffff;
 }
