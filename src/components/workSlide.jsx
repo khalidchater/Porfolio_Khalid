@@ -2,7 +2,7 @@
 import {useSwiper} from "swiper/react"
 import { PiCaretLeftBold, PiCaretRightBold } from "react-icons/pi";
 
-function WorkSlide({containerStyle, btnStyle, iconeStyle}) {
+function Workslide({containerStyle, btnStyle, iconeStyle}) {
     const swiper = useSwiper()
   return (
     <div className={containerStyle}>
@@ -20,4 +20,4 @@ function WorkSlide({containerStyle, btnStyle, iconeStyle}) {
   );
 }
 
-export default WorkSlide
+export default Workslide

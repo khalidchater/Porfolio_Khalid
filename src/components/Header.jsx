@@ -7,7 +7,7 @@ import { RiCloseLargeFill } from "react-icons/ri";
 import MobileRes from "./MobileRes"
 import { MdOutlineDarkMode } from "react-icons/md";
 import { CiLight } from "react-icons/ci";
-function Header({ darkMode, setDarkMode }) {
+function Header() {
   return (
     <header className=" py-8 xl:py-12 text-white ">
       <div className='container mx-auto flex items-center justify-between'>

@@ -17,7 +17,7 @@ import {
 
 import { BsArrowDownRight } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Slide from "@/components/WorkSlide";
+import Slide from "@/components/Workslide";
 
 // Import Swiper styles
 import "swiper/css";

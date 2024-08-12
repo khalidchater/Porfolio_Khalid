@@ -1,22 +1,18 @@
-"use client";
-import { useState } from "react";
-import Header from "../components/Header.jsx";
-import Pagetransition from "../components/Pagetransiton.jsx";
-import StairTransition from "../components/StairTransition.jsx";
+import dynamic from "next/dynamic";
+const Header = dynamic(() => import("../components/Header.jsx"));
+const Pagetransition = dynamic(() => import("../components/Pagetransiton.jsx"));
+const StairTransition = dynamic(
+  () => import("../components/StairTransition.jsx")
+);
 
 export default function RootLayoutClient({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const [darkMode, setDarkMode] = useState(false);
-
   return (
-    <body className={`${darkMode ? "dark" : ""}`}>
-      <Header
-        darkMode={darkMode}
-        setDarkMode={setDarkMode}
-      />
+    <body>
+      <Header />
       <StairTransition />
       <Pagetransition>{children}</Pagetransition>
     </body>

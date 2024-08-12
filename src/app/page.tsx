@@ -1,6 +1,9 @@
-import Social from "../components/Social.jsx";
+// import Social from "../components/Social.jsx";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import BoxReveal from "@/components/magicui/box-reveal";
+import { Button } from "@/components/ui/button";
+const Social = dynamic(() => import("../components/Social.jsx"));
 
 export default function Home() {
   return (
@@ -15,7 +18,9 @@ export default function Home() {
                 duration={0.5}>
                 <h3 className='font-bold '>
                   Hello I'm <br />
-                  <span className='text-[#FF4C4C] font-bold '>Khalid Chater</span>
+                  <span className='text-[#FF4C4C] font-bold '>
+                    Khalid Chater
+                  </span>
                 </h3>
               </BoxReveal>
             </div>
@@ -24,6 +29,18 @@ export default function Home() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eum
               deserunt et hic molestias minima illo quo quidem magni! Accusamus.
             </p>
+            <a
+              href='/My_Cv.pdf'
+              target='_blank'
+              rel="noopener noreferrer" >
+              <Button
+                size='lg'
+                className='max-w-60 mt-8 p-5'
+                type='submit'>
+                {" "}
+                Download Cv
+              </Button>
+            </a>
           </div>
           <div>
             <Image

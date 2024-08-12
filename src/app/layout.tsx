@@ -1,10 +1,8 @@
 
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { JetBrains_Mono } from "next/font/google";
-import Header from "../components/Header.jsx";
-import Pagetransition from "../components/Pagetransiton.jsx";
-import StairTransition from "../components/StairTransition.jsx";
-import RootLayoutClient from "./RouteLayoutClinet"
+const RootLayoutClient = dynamic(() => import("./RouteLayoutClinet"));
 
 import "./globals.css";
 
