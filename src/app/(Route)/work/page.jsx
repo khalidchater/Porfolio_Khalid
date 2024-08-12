@@ -3,10 +3,10 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { BsGithub } from "react-icons/bs";
-import Ecommerc from "../../../public/E-commerc website.png";
-import FullStack from "../../../public/full_Stack.png";
-import WATHER from "../../../public/WEATHERAPP.png";
-import Portfolio from "../../../public/Porfolio.png";
+import Ecommerc from "../../../../public/E-commerc website.png";
+import FullStack from "../../../../public/full_Stack.png";
+import WATHER from "../../../../public/WEATHERAPP.png";
+import Portfolio from "../../../../public/Porfolio.png";
 
 import {
   Tooltip,
@@ -168,6 +168,7 @@ function Page() {
                           fill
                           quality={100}
                           className='object-cover'
+                          loading='lazy'
                           alt=''
                         />
                       </div>
