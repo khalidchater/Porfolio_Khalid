@@ -15,7 +15,7 @@ function Header() {
           href='/'
           className='no-underline'>
           <h1 className='text-3xl font-bold '>
-            Khalid <span className='text-[#FF4C4C] dark:text-blue-500'>.</span>
+            KHalid <span className='text-[#FF4C4C] dark:text-blue-500'>.</span>
           </h1>
         </Link>
 

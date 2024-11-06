@@ -6,7 +6,7 @@ const StairTransition = dynamic(
 );
 
 export default function RootLayoutClient({
-  children,
+  children
 }: {
   children: React.ReactNode;
 }) {

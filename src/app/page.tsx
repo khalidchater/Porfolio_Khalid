@@ -11,7 +11,9 @@ export default function Home() {
       <div className='container mx-auto h-full '>
         <div className='flex flex-col justify-between items-center xl:flex-row gap-y-8'>
           <div className='text-center xl:text-left'>
-            <span className='text-gray-300'>Full stack developer</span>
+            <span className='text-gray-300 text-2xl font-bold'>
+              Full stack developer
+            </span>
             <div className='flex  xl:justify-start justify-center '>
               <BoxReveal
                 boxColor={"#FF4C4C"}
@@ -26,16 +28,18 @@ export default function Home() {
             </div>
 
             <p className='md:max-w-[500px] w-full text-white/80 '>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eum
-              deserunt et hic molestias minima illo quo quidem magni! Accusamus.
+              I’m a Full Stack Web Developer 👨‍💻 with a passion for
+              problem-solving and creating seamless, responsive applications 🌐.
+              Dedicated to delivering innovative, efficient solutions that meet
+              client needs.
             </p>
             <a
-              href='/My_Cv.pdf'
+              href='/My_Cvv.pdf'
               target='_blank'
-              rel="noopener noreferrer" >
+              rel='noopener noreferrer'>
               <Button
                 size='lg'
-                className='max-w-60 mt-8 p-5'
+                className='max-w-60 mt-8 p-5 text-white'
                 type='submit'>
                 {" "}
                 Download Cv

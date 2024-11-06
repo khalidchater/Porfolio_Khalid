@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { JetBrains_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 const RootLayoutClient = dynamic(() => import("./RouteLayoutClinet"));
 
 import "./globals.css";
@@ -29,6 +30,7 @@ export default function RootLayout({
       className=''>
       <body className={`${JetBrainsMono.variable} font-sans`}>
         <RootLayoutClient>{children}</RootLayoutClient>
+         <Analytics />
       </body>
     </html>
   );
